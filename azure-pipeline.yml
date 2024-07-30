@@ -11,8 +11,7 @@ resources:
       name: microsoft/PowerAppsTestAutomation
       ref: master
       # Name of the GitHub OAuth ADO Service Connection
-      endpoint: <ADO GitHub OAuth Service Connection Name>
-
+      endpoint: github.com_demo435
 parameters:
  - name: image
    displayName: Pool Image
@@ -73,6 +72,6 @@ jobs:
       OnlineUrl: $(PortalUrl)
       BrowserType: ${{ parameters.BrowserType }}
       # File location format is /s/TeamProjectName/FilePathToTestAutomationURLs.json
-      TestAutomationURLFilePath: $(Build.SourcesDirectory)\$(LocalProjectName)\Samples\$(TestUrlFileName)
+      TestAutomationURLFilePath: https://github.com/demo435/PowerAppsTestAutomation/tree/master/TestURLs.json
       UsePrivateMode: $(PrivateMode)
       LoginMethod: ${{ parameters.LoginMethod }}
