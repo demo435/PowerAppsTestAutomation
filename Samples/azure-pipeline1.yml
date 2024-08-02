@@ -54,7 +54,7 @@ jobs:
   - name: PrivateMode
     value: true
     # FileName where TestAutomationURLs are stored in JSON format
-  - name: TestUrlFileName 
+  - name: TestUrlsFileName 
     value: TestURLs.json
     # Project name of repo containing TestAutomationURLs (spaces should be encoded as %20)
     # Example: Contoso Test Framework --> Contoso%20Test%20Framework
@@ -72,6 +72,6 @@ jobs:
       OnlineUrl: $(PortalUrl)
       BrowserType: ${{ parameters.BrowserType }}
       # File location format is /s/TeamProjectName/FilePathToTestAutomationURLs.json
-      TestURLFilePath: PowerAppsTestAutomation/Samples/TestURLs.json
+      TestURLFilePath: PowerAppsTestAutomation/tree/master/Samples/TestURLs.json
       UsePrivateMode: $(PrivateMode)
       LoginMethod: ${{ parameters.LoginMethod }}
