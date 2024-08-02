@@ -72,6 +72,6 @@ jobs:
       OnlineUrl: $(PortalUrl)
       BrowserType: ${{ parameters.BrowserType }}
       # File location format is /s/TeamProjectName/FilePathToTestAutomationURLs.json
-      TestAutomationURLFilePath: Test/TestURLs.json
+      TestAutomationURLFilePath: Samples/TestURLs.json
       UsePrivateMode: $(PrivateMode)
       LoginMethod: ${{ parameters.LoginMethod }}
