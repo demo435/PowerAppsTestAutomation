@@ -51,7 +51,7 @@
     <Parameter name="DriversPath" value="" />
     <Parameter name="UsePrivateMode" value="true" />
     <Parameter name="ResultsDirectory" value="" />
-    <Parameter name="TestAutomationURLFilePath" value="" />
+    <Parameter name="TestAutomationURLFilePath" value="Samples\TestAutomationURLs.json" />
     <Parameter name="TestMaxWaitTimeInSeconds" value="600" />
   </TestRunParameters>
   <!-- Adapter Specific sections -->
